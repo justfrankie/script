@@ -1,0 +1,19 @@
+{
+  "name": "script",
+  "version": "1.0.0",
+  "description": "A light, easy-to-use, and minimal journaling web application",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justfrankie/script.git"
+  },
+  "author": "Frankie Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justfrankie/script/issues"
+  },
+  "homepage": "https://github.com/justfrankie/script#readme"
+}
