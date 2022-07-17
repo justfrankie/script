@@ -1,0 +1,99 @@
+.mainBodyContainer {
+  color: #858584;
+}
+.headerPanelContainer {
+  background-color: #F7F8FA;
+}
+.headerPanelSubContainer {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.brandContainer {
+  display: flex;
+  align-items: baseline;
+}
+
+.userPanelNavContainer {
+}
+
+.userPanelNavUl {
+  display:flex;
+}
+
+.mainBodyPanelContainer {
+  width: 50%;
+    margin: 0 auto;
+}
+.entryListsContainer {
+  margin: 4rem 0;
+}
+
+.entryListHeaderContainer{
+  box-shadow: 0px 1px 6px 2px #e3e3e39c;
+}
+.entryListHeaderPanel {
+display: flex;
+width: 80%;
+margin: 0 auto;
+justify-content: space-between;
+align-items: baseline;
+}
+
+.entryListDate {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.cycleThroughButtonContainer {
+  font-weight: bold;
+  display: flex;
+    width: 5rem;
+    justify-content: space-between;
+  
+}
+
+#cycleThroughBack {
+  font-size: 1.5rem;
+}
+
+#cycleThroughNext {
+  font-size: 1.5rem;
+}
+
+.entryListBodyContainer {
+  color: #4F4F4F;
+  margin: 2rem 0;
+  box-shadow: 1px 4px 10px 2px #e3e3e3;
+}
+
+.entryListSubContainer {
+  width: 75%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.entryTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.entryTitle {
+  color: #4F4F4F;
+  font-weight: 600;
+}
+
+.entryTimestamp {
+  color: #A1A1A1;
+}
+
+.entryBodyTextContainer {
+
+}
+
+.entryBodyText {
+
+}
