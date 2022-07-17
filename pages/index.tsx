@@ -1,8 +1,4 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import { ReactNode } from 'react';
-import { render } from 'react-dom';
 import styles from '../styles/Dashboard.module.css'
 import {mockEntries} from "./api/constants/mockEntries";
 const Dashboard: NextPage = () => {
