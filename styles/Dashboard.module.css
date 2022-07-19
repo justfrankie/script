@@ -16,33 +16,53 @@
   align-items: baseline;
 }
 
+#mainBrandIcon {
+  width: 2rem;
+  color: #454c77;
+}
+
+#mainBrandName {
+  color: #454c77;
+  font-weight: 700;
+}
 .userPanelNavContainer {
+  display: flex;
+    align-items: center;
 }
 
 .userPanelNavUl {
-  display:flex;
+  display: flex;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .userPanelIcon {
+    width: 2.5rem;
 }
 
 .mainBodyPanelContainer {
   width: 50%;
     margin: 0 auto;
 }
+
 .entryListsContainer {
-  margin: 4rem 0;
+  margin: 3rem 0;
 }
 
 .entryListHeaderContainer{
   box-shadow: 0px 1px 6px 2px #e3e3e39c;
 }
+
 .entryListHeaderPanel {
-display: flex;
-width: 80%;
-margin: 0 auto;
-justify-content: space-between;
-align-items: baseline;
+  display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .entryListDate {
+  color: #686464;
   font-weight: bold;
   font-size: 1.5rem;
 }

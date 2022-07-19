@@ -1,22 +1,29 @@
 import type { NextPage } from 'next'
 import styles from '../styles/Dashboard.module.css'
 import {mockEntries} from "./api/constants/mockEntries";
+import CollectionsBookmarkIcon from '@mui/icons-material/CollectionsBookmark';
+import EditIcon from '@mui/icons-material/Edit';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import SearchIcon from '@mui/icons-material/Search';
+import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+
 const Dashboard: NextPage = () => {
   const renderHeaderPanel = () => {
     return (
       <div className={styles.headerPanelSubContainer}>
         <span className={styles.brandContainer}>
-        <p>icon</p>
-        <h1>script journal</h1>
+        <a id={styles.mainBrandIcon}>{<CollectionsBookmarkIcon/>}</a>
+        <h1 id={styles.mainBrandName}>script journal</h1>
         </span>
 
         <span className={styles.userPanelNavContainer}>
           <ul className={styles.userPanelNavUl}>
-            <a id="userPanelPencil">Pencil Icon</a>
-            <a id="userPanelCalendar">Calendar Icon</a>
-            <a id="userPanelMagnifying">Magnifying Icon</a>
-            <a id="userPanelProfile">Profile Icon</a>
-            <a id="userPanelDarkMode">Dark Mode Icon</a>
+            <a className={styles.userPanelIcon}>{<EditIcon/>}</a>
+            <a className={styles.userPanelIcon}>{<CalendarMonthIcon/>}</a>
+            <a className={styles.userPanelIcon}>{<SearchIcon/>}</a>
+            <a className={styles.userPanelIcon}>{<ManageAccountsIcon/>}</a>
+            <a className={styles.userPanelIcon}>{<DarkModeIcon/>}</a>
           </ul>
         </span>
       </div>
