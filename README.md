@@ -1,6 +1,6 @@
 This is a lightweight journaling application built with the framework [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+Currently, the application is making its way to the demo stage, stay tuned for the full version!
 
 You'll need node.js and npm to install the required dependencies for this package!
 
