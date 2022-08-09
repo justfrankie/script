@@ -70,10 +70,15 @@ const Dashboard: NextPage = () => {
       </div>
     )
   }
+
+  const renderFooter = () => {
+    return <h1>WIP footer</h1>
+  }
   return (
     <div className={styles.mainBodyContainer}>
     <div className={styles.headerPanelContainer}>{renderHeaderPanel()}</div>
     <>{renderMainBodyPanel()}</>
+    <>{renderFooter()}</>
     </div>
   )
 }
