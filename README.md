@@ -13,7 +13,8 @@ containing these local variables:
 PORT=4000
 ```
 
-<img src="./Script_v1_demo.png"
+V1 edition of Script: 
+<img src="./Script_v1_demo_image.png"
      alt="demo png"
  />
 
