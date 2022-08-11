@@ -3,6 +3,10 @@ Script ([live app here](https://script-vert.vercel.app/)) is a lightweight journ
 
 Currently, the application is making its way towards a functional demo app, stay tuned for the full version!
 
+## Tech Stack:
+Frontend: React.js, HTML, CSS, Next.js, create-react-app
+Backend: Vercel (deployment)
+
 ## Requirements:
 After cloning/downloading this package from github, you will need node.js and npm (Node Package Manager) to install the required dependencies!
 
