@@ -12,6 +12,7 @@ containing these local variables:
 ```
 PORT=4000
 ```
+![Script_v1_demo]("./Script_v1_demo.png")
 
 Next, run `npm install` and let the packages build.
 run `npm start` and open [http://localhost:4000](http://localhost:4000) with your browser to see the local client.
