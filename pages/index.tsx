@@ -72,7 +72,16 @@ const Dashboard: NextPage = () => {
   }
 
   const renderFooter = () => {
-    return <h1>WIP footer</h1>
+    return <div  className={styles.footerContainer}>
+      <div className={styles.footerPadding}>
+            <hr id={styles.footerHr}></hr>
+        <ul className={styles.aboutSubHeadingWrapper}>
+        <li className={styles.aboutSubHeading}><p>Author</p></li>
+        <li className={styles.aboutSubHeading}><p>Purpose</p></li>
+        <li className={styles.aboutSubHeading}><p>Roadmap</p></li>
+        </ul>
+        </div>
+      </div>
   }
   return (
     <div className={styles.mainBodyContainer}>
