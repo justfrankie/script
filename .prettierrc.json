@@ -1,0 +1,11 @@
+{
+    "overrides": [
+      {
+        "files": "*.module.css",
+        "options": {
+          "parser": "css",
+          "singleQuote": true
+        }
+      }
+    ]
+  }

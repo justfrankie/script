@@ -7,24 +7,28 @@
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
-        "next/core-web-vitals"
+        "next/core-web-vitals",
+        "plugin:prettier/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
-            "jsx": true
+            "jsx": true,
+            "tsx": true
         },
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier"
     ],
     "rules": {
         "no-console": 0,
         "no-empty": 0,
         "no-irregular-whitespace": 0,
-        "react/react-in-jsx-scope": "off"
+        "react/react-in-jsx-scope": "off",
+        "prettier/prettier": ["error", {}, { "usePrettierrc": true }]
     }
 }

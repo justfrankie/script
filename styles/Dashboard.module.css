@@ -41,8 +41,9 @@
 }
 
 .mainBodyPanelContainer {
-  width: 50%;
-    margin: 0 auto;
+  width: 75%;
+            height: 80vh;
+            margin: 0 auto;
 }
 
 .entryListsContainer {
