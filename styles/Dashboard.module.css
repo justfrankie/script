@@ -41,8 +41,9 @@
 }
 
 .mainBodyPanelContainer {
-  width: 50%;
-    margin: 0 auto;
+  width: 75%;
+            height: 80vh;
+            margin: 0 auto;
 }
 
 .entryListsContainer {
@@ -116,4 +117,27 @@
 
 .entryBodyText {
 
+}
+.footerContainer {
+  background-color: #F7F8FA;
+}
+
+#footerHr {
+  border: 1px solid #dedede;
+  margin-top: 2rem;
+}
+
+.footerPadding {
+  margin: 0 auto;
+  width: 80%;
+  padding: 2rem;
+}
+
+.aboutSubHeadingWrapper {
+  list-style: none;
+  display: flex;
+}
+
+.aboutSubHeading {
+  margin: 0 auto;
 }
