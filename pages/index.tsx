@@ -1,12 +1,45 @@
 import type { NextPage } from 'next'
 import styles from '../styles/Dashboard.module.css'
-import {mockEntries} from "./api/constants/mockEntries";
+// import {mockEntries} from "./api/constants/mockEntries";
 import CollectionsBookmarkIcon from '@mui/icons-material/CollectionsBookmark';
 import EditIcon from '@mui/icons-material/Edit';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import SearchIcon from '@mui/icons-material/Search';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+const mockEntries = []
+type Props = {
+  list: any;
+};
+const EntryList: React.FC<Props> = ({list}) => {
+
+  return (
+    list.map((entry: any, key: number) => ( 
+    <div className={styles.entryListBodyContainer} key={key}>
+              <div className={styles.entryListHeaderContainer}>
+      <div className={styles.entryListHeaderPanel}>
+    <p className={styles.entryListDate}>{entry.entryListDate}</p>
+    <span className={styles.cycleThroughButtonContainer}>
+    <p id={styles.cycleThroughBack}>{"<"}</p>
+    <p id={styles.cycleThroughBack}>{">"}</p>
+    </span>
+    </div>
+    </div>
+    <div className={styles.entryListSubContainer} >
+    <span className={styles.entryTitleContainer}>
+    <p className={styles.entryTitle}>{entry.title}</p>
+    <p className={styles.entryTimestamp}>{entry.lastSavedTimestamp}</p>
+    </span>
+    <div className={styles.entryBodyTextContainer}>
+      <p className={styles.entryBodyText}>
+      {entry.body}
+      </p>
+    </div>
+    </div>
+    </div>
+  )
+  ))
+}
 
 const Dashboard: NextPage = () => {
   const renderHeaderPanel = () => {
@@ -30,41 +63,20 @@ const Dashboard: NextPage = () => {
     )
   }
 
-  const renderMainBodyPanel = () => {
-    const renderEntries = () => {
+  const NoEntriesModule  = () => (
+    <div>
+      <h3>No entries found.</h3>
+      <p>Click here to start writing,</p>
+      <p>Click here to browse a random public entry.</p>
+    </div>
+  )
 
-      return (
-      mockEntries.map((entry, key) => ( 
-        <div className={styles.entryListBodyContainer} key={key}>
-                  <div className={styles.entryListHeaderContainer}>
-          <div className={styles.entryListHeaderPanel}>
-        <p className={styles.entryListDate}>{entry.entryListDate}</p>
-        <span className={styles.cycleThroughButtonContainer}>
-        <p id={styles.cycleThroughBack}>{"<"}</p>
-        <p id={styles.cycleThroughBack}>{">"}</p>
-        </span>
-        </div>
-        </div>
-        <div className={styles.entryListSubContainer} >
-        <span className={styles.entryTitleContainer}>
-        <p className={styles.entryTitle}>{entry.title}</p>
-        <p className={styles.entryTimestamp}>{entry.lastSavedTimestamp}</p>
-        </span>
-        <div className={styles.entryBodyTextContainer}>
-          <p className={styles.entryBodyText}>
-          {entry.body}
-          </p>
-        </div>
-        </div>
-        </div>
-      )
-      ))
-    }
+  const renderMainBodyPanel = () => {
     return (
       <div className={styles.mainBodyPanelContainer}>
         <div className={styles.entryListsContainer}>
      <>
-          {renderEntries()}
+          {mockEntries.length ? <EntryList list={mockEntries}/> : <NoEntriesModule/>}
           </>
         </div>
       </div>
